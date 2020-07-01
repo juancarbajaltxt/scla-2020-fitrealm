@@ -1,3 +1,4 @@
+import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -9,7 +10,8 @@ import { ChallengePageRoutingModule } from './challenge-routing.module';
 import { ChallengePage } from './challenge.page';
 
 @NgModule({
-  imports: [
+  imports: [ 
+    MbscModule, 
     CommonModule,
     FormsModule,
     IonicModule,

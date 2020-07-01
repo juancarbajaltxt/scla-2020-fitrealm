@@ -11,6 +11,14 @@ const routes: Routes = [
   {
     path: 'challenge',
     loadChildren: () => import('./challenge/challenge.module').then( m => m.ChallengePageModule)
+  },
+  {
+    path: 'timer-app',
+    loadChildren: () => import('./timer-app/timer-app.module').then( m => m.TimerAppPageModule)
+  },
+  {
+    path: 'overview',
+    loadChildren: () => import('./overview/overview.module').then( m => m.OverviewPageModule)
   }
 ];
 @NgModule({

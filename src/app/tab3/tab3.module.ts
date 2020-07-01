@@ -1,3 +1,4 @@
+import { MbscModule } from '@mobiscroll/angular';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab3PageRoutingModule } from './tab3-routing.module'
 
 @NgModule({
-  imports: [
+  imports: [ 
+    MbscModule, 
     IonicModule,
     CommonModule,
     FormsModule,

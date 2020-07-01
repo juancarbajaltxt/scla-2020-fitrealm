@@ -1,7 +1,10 @@
+import { FormsModule } from '@angular/forms';
+import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Tab1Page } from '../tab1/tab1.page';
 import { ChallengePage } from './challenge.page';
+import { TimerAppPage } from '../timer-app/timer-app.page';
 
 const routes: Routes = [
   {
@@ -12,11 +15,17 @@ const routes: Routes = [
   path: '/tab1',
   component: Tab1Page
 },
+{
+path: '/timer-app',
+component: TimerAppPage
+},
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [ 
+    FormsModule,  
+    MbscModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class ChallengePageRoutingModule {}
