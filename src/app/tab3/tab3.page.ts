@@ -1,60 +1,39 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import {Chart}  from 'chart.js';
+import { Component } from "@angular/core";
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page {
+export class Tab3Page{
+  
+  constructor(public navCtrl: NavController) {}
 
-  @ViewChild("barCanvas") barCanvas: ElementRef;
+  public barChartOptions:any = {
+    scaleShowVerticalLines: false,
+    responsive: true
+  };
 
-  public barChart: Chart;
-
-  constructor() {}
-
-  ngOnInit() {
-    console.log(this.barChart);
-    this.barChart = new Chart(this.barCanvas.nativeElement, {
-      type: "bar",
-      data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [
-          {
-            label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)"
-            ],
-            borderColor: [
-              "rgba(255,99,132,1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
-              "rgba(153, 102, 255, 1)",
-              "rgba(255, 159, 64, 1)"
-            ],
-            borderWidth: 1
-          }
-        ]
-      },
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true
-              }
-            }
-          ]
-        }
-      }
-    });
+  //Chart Labels
+  public barChartLabels:string[] = ['2011', '2012', '2013', '2014', '2015', '2016', '2017'];
+  public barChartType:string = 'bar';
+  public barChartLegend:boolean = true;
+ 
+  //Chart data
+  public barChartData:any[] = [
+    {data: [66, 55, 83, 82, 56, 51, 43], label: 'Loss'},
+    {data: [29, 38, 40, 21, 82, 30, 89], label: 'Profit'}
+  ];
+ 
+  // Chart events
+  public chartClicked(e:any):void {
+    console.log(e);
   }
+
+  // Chart events
+  public chartHovered(e:any):void {
+    console.log(e);
+  }
+
 }

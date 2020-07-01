@@ -3,11 +3,9 @@ import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import {Chart}  from 'chart.js';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -16,7 +14,7 @@ import { AppComponent } from './app.component';
   entryComponents: [],
   imports: [ 
     FormsModule,  
-    MbscModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, Chart,],
+    MbscModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
   providers: [
     StatusBar,
     SplashScreen,

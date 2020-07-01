@@ -12,17 +12,18 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  </ion-content>
 
-  <ion-content>
-    <div class="ion-padding">
-      <ion-card>
-        <ion-card-header>
-          Bar Chart
-        </ion-card-header>
-        <ion-card-content>
-          <canvas #barCanvas></canvas>
-        </ion-card-content>
-      </ion-card>
-    </div>
-    </ion-content>
-    </ion-content>
+  <h2>Business Charts</h2>
+          <div>
+              <div style="display: block">
+                <canvas baseChart height="350"
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>   

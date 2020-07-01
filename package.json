@@ -26,6 +26,10 @@
         "@mobiscroll/angular": "https://npm.mobiscroll.com/@mobiscroll/angular-trial/-/angular-trial-4.10.4.tgz",
         "@types/chart.js": "^2.9.22",
         "chart.js": "^2.9.3",
+        "cordova": "^9.0.0",
+        "ionic": "^5.4.16",
+        "ng2-charts": "^2.3.2",
+        "ng2-google-charts": "^6.0.1",
         "rxjs": "~6.5.1",
         "tslib": "^1.10.0",
         "zone.js": "~0.10.2"
