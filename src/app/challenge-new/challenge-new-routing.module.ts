@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: '/timer-app',
-    component: TimerAppPage
+  component: TimerAppPage
   },
   {
     path: '/tab1',

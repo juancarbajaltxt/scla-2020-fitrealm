@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Tab1Page } from './tab1.page';
 import { OverviewPage } from '../overview/overview.page';
-import { ChallengeNewPage } from '../challenge-new/challenge-new.page';
+//import { ChallengeNewPage } from '../challenge-new/challenge-new.page';
 
 const routes: Routes = [
   {
@@ -12,10 +12,10 @@ const routes: Routes = [
     component: Tab1Page,
   },
 
-  {
-    path: '/challenge',
-    component: ChallengeNewPage,  
-  },
+  //{
+    //path: '/challenge',
+    //component: ChallengeNewPage,  
+  //},
   
   {
     path: '/overview',
