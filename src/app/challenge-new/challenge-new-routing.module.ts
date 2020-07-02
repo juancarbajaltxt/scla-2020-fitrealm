@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ChallengeNewPage } from './challenge-new.page';
-import { TimerAppPage } from '../timer-app/timer-app.page';
+//import { TimerAppPage } from '../timer-app/timer-app.page';
 import { Tab1Page } from '../tab1/tab1.page';
 
 const routes: Routes = [
@@ -10,10 +10,10 @@ const routes: Routes = [
     path: '',
     component: ChallengeNewPage
   },
-  {
-    path: '/timer-app',
-  component: TimerAppPage
-  },
+  //{
+    //path: '/timer-app',
+  //component: TimerAppPage
+  //},
   {
     path: '/tab1',
     component: Tab1Page,

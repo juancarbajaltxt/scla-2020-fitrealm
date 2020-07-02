@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ChallengeNewPageRoutingModule } from './challenge-new-routing.module';
 
 import { ChallengeNewPage } from './challenge-new.page';
-import { TimerAppPage } from '../timer-app/timer-app.page';
+//import { TimerAppPage } from '../timer-app/timer-app.page';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { TimerAppPage } from '../timer-app/timer-app.page';
     FormsModule,
     IonicModule,
     ChallengeNewPageRoutingModule,
-    TimerAppPage,
+    //TimerAppPage,
   ],
   declarations: [ChallengeNewPage]
 })
