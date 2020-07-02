@@ -28,7 +28,7 @@ export class TimerAppPage implements OnInit {
                 message: 'Good Job! <br> Press OK to go to the next page'
             });
             this.goToOverview();
-
+              
         }
   
     };

@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { IonicModule } from '@ionic/angular';
-
+import { OverviewPage } from '../overview/overview.page';
+import { Tab3Page } from '../tab3/tab3.page';
 import { TimerAppPageRoutingModule } from './timer-app-routing.module';
-
 import { TimerAppPage } from './timer-app.page';
 
 @NgModule({
@@ -18,6 +18,8 @@ import { TimerAppPage } from './timer-app.page';
     TimerAppPageRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    OverviewPage,
+    Tab3Page,
   ],
   declarations: [TimerAppPage]
 })

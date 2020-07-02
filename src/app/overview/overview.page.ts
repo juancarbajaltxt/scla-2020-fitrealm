@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class OverviewPage implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
