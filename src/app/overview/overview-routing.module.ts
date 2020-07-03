@@ -10,7 +10,8 @@ const routes: Routes = [
     component: OverviewPage
   },
   {
-    path
+    path: '/tab1',
+    component: Tab1Page
   }
 ];
 
