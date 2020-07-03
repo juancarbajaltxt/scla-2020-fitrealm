@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { mobiscroll, MbscTimerOptions } from '@mobiscroll/angular';
-import { OverviewPage } from '../overview/overview.page';
 import { Router } from '@angular/router';
 
 mobiscroll.settings = {
-  theme: 'ios',
-  themeVariant: 'light',
+    theme: 'ios',
+    themeVariant: 'light',
 };
 
 @Component({
@@ -15,35 +14,32 @@ mobiscroll.settings = {
 })
 export class TimerAppPage implements OnInit {
 
-  timer: number;
-  
-    timerSettings: MbscTimerOptions = {
-        display: 'inline',
-        targetTime: 10,
-        maxWheel: 'minutes',
-        minWidth: 100,
-        onFinish: () => {
-            mobiscroll.alert({
-                title: 'Countdown finished',
-                message: 'Good Job! <br> Press OK to go to the next page'
-            });
-            this.goToOverview();
-              
-        }
-  
-    };
+  constructor(private route: Router) { }
 
-overviewPage: OverviewPage;
+   timer: number;
 
-  constructor(private router: Router) { }
+    nextPage() {
+      this.route.navigate(['overview']);
+    }
 
-  goToOverview() {
-//helper funiton - to do make the code more readable
-    this.router.navigate(['/overview']);
+   timerSettings: MbscTimerOptions = {
+       display: 'inline',
+       targetTime: 10,
+       maxWheel: 'minutes',
+       minWidth: 100,
+       onFinish: () => {
+           mobiscroll.alert({
+               title: 'Countdown finished',
+               message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
 
-  }
+           });
+           this.nextPage();
+       }
+   };
 
   ngOnInit() {
   }
+
+
 
 }

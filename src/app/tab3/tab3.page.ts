@@ -10,9 +10,10 @@ export class Tab3Page {
   constructor() {
 
   }
-
+  totalCaloriesLost = 0;
   addPushups = 0;
   beginPushups = 0;
+  beginPushupsBank = 0;
   totalPushups = this.addPushups + this.beginPushups;
 
 }

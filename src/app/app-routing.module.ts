@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'challenge-new',
     loadChildren: () => import('./challenge-new/challenge-new.module').then( m => m.ChallengeNewPageModule)
-  }
+  },
 ];
 @NgModule({
   imports: [
