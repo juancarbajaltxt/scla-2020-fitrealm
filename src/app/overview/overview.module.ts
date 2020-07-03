@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { OverviewPageRoutingModule } from './overview-routing.module';
 import { TimerAppPage } from '../timer-app/timer-app.page';
 import { OverviewPage } from './overview.page';
+import { Router } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { OverviewPage } from './overview.page';
     OverviewPageRoutingModule,
     Tab3Page,
     TimerAppPage,
+    Router,
   ],
   declarations: [OverviewPage]
 })
