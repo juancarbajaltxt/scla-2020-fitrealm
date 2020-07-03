@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { mobiscroll, MbscTimerOptions } from '@mobiscroll/angular';
 import { Router } from '@angular/router';
-import { ChallengeNewPage } from '../challenge-new/challenge-new.page';
-import { ChallengeCardioPage } from '../challenge-cardio/challenge-cardio.page';
-import { ChallengeLowerPage } from '../challenge-lower/challenge-lower.page';
-import { ChallengeUpperPage } from '../challenge-upper/challenge-upper.page';
+//import { Events } from '@ionic/angular';
 
 
 mobiscroll.settings = {
@@ -19,7 +16,7 @@ mobiscroll.settings = {
 })
 export class TimerAppPage implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor(private route: Router,) { }
 
 
   Amount = 25;
@@ -29,7 +26,7 @@ export class TimerAppPage implements OnInit {
    timer: number;
 
     nextPage() {
-      this.route.navigate(['overview']);
+      this.route.navigate(['/overview']);
     }
 
    timerSettings: MbscTimerOptions = {

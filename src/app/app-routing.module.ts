@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'challenge-cardio',
     loadChildren: () => import('./challenge-cardio/challenge-cardio.module').then( m => m.ChallengeCardioPageModule)
   },
+  {
+    path: 'overview',
+    loadChildren: () => import('./overview/overview.module').then( m => m.OverviewPageModule)
+  },
 ];
 @NgModule({
   imports: [

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Procedure } from '../timer-app/timer-app.page';
+//import { Procedure } from '../timer-app/timer-app.page';
 
 @Component({
   selector: 'app-challenge-lower',
@@ -8,9 +8,9 @@ import { Procedure } from '../timer-app/timer-app.page';
 })
 export class ChallengeLowerPage implements OnInit {
 
-  squatRep() {
-    this.Procedure = 'Squats';
-  }
+  //squatRep() {
+    //this.Procedure = 'Squats';
+  //}
 
   constructor() { }
 

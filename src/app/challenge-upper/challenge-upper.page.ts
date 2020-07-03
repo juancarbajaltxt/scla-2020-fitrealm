@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Procedure } from '../timer-app/timer-app.page';
 
 @Component({
   selector: 'app-challenge-upper',
@@ -8,9 +7,6 @@ import { Procedure } from '../timer-app/timer-app.page';
 })
 export class ChallengeUpperPage implements OnInit {
 
-  pushRep() {
-    this.Procedure = 'Push-Up';
-  }
 
   constructor() { }
 
