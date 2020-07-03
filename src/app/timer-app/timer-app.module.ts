@@ -12,11 +12,11 @@ import { MbscModule } from '@mobiscroll/angular';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
     TimerAppPageRoutingModule,
+    FormsModule,
     ReactiveFormsModule,
-    MbscModule,
+    MbscModule
   ],
   declarations: [TimerAppPage]
 })

@@ -20,6 +20,18 @@ const routes: Routes = [
     path: 'challenge-new',
     loadChildren: () => import('./challenge-new/challenge-new.module').then( m => m.ChallengeNewPageModule)
   },
+  {
+    path: 'challenge-lower',
+    loadChildren: () => import('./challenge-lower/challenge-lower.module').then( m => m.ChallengeLowerPageModule)
+  },
+  {
+    path: 'challenge-upper',
+    loadChildren: () => import('./challenge-upper/challenge-upper.module').then( m => m.ChallengeUpperPageModule)
+  },
+  {
+    path: 'challenge-cardio',
+    loadChildren: () => import('./challenge-cardio/challenge-cardio.module').then( m => m.ChallengeCardioPageModule)
+  },
 ];
 @NgModule({
   imports: [
