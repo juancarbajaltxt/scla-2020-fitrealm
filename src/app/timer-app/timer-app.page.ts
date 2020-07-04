@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { mobiscroll, MbscTimerOptions } from '@mobiscroll/angular';
 import { Router } from '@angular/router';
-//import { Events } from '@ionic/angular';
+import { DataService } from '../services/data.service';
 
 
 mobiscroll.settings = {
@@ -16,14 +16,12 @@ mobiscroll.settings = {
 })
 export class TimerAppPage implements OnInit {
 
-  constructor(private route: Router,) { }
+  constructor(private route: Router, private dataService: DataService) { }
 
-
-  Amount = 25;
-  Procedure = '';
-
+  sum = {count:0, type:'core'};
 
    timer: number;
+
 
     nextPage() {
       this.route.navigate(['/overview']);
@@ -40,13 +38,14 @@ export class TimerAppPage implements OnInit {
                message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
 
            });
+
+           this.dataService.setData(this.sum);
+
            this.nextPage();
+           
        }
    };
 
   ngOnInit() {
   }
-
-
-
-}
+  }

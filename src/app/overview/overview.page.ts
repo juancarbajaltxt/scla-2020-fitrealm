@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
+
 
 @Component({
   selector: 'app-overview',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewPage implements OnInit {
 
-  constructor() { }
+data: any;
+
+  constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit() {
+
+    var sum = this.dataService.getData();
+    console.log(sum.type, sum.count);
+
   }
 
 }

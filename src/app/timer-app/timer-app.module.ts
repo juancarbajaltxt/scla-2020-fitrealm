@@ -16,7 +16,7 @@ import { MbscModule } from '@mobiscroll/angular';
     TimerAppPageRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MbscModule
+    MbscModule,
   ],
   declarations: [TimerAppPage]
 })

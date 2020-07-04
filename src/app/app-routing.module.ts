@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -31,10 +32,6 @@ const routes: Routes = [
   {
     path: 'challenge-cardio',
     loadChildren: () => import('./challenge-cardio/challenge-cardio.module').then( m => m.ChallengeCardioPageModule)
-  },
-  {
-    path: 'overview',
-    loadChildren: () => import('./overview/overview.module').then( m => m.OverviewPageModule)
   },
 ];
 @NgModule({
