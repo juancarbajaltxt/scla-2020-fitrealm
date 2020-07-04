@@ -38,8 +38,10 @@ export class TimerAppPage implements OnInit {
                message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
 
            });
-
+           
            this.dataService.setData(this.sum);
+
+           this.dataService.incrementData();
 
            this.nextPage();
            

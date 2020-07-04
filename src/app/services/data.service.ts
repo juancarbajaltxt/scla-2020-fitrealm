@@ -13,6 +13,11 @@ export class DataService {
     this.data = data;
   }
  
+  incrementData(){
+    this.data.count += 20;
+
+  }
+
   getData() {
     return this.data;
   }
