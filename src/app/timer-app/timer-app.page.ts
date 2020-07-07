@@ -18,7 +18,7 @@ export class TimerAppPage implements OnInit {
 
   constructor(private route: Router, private dataService: DataService) { }
 
-  sum = {count:0, type:'core'};
+    timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0,}
 
    timer: number;
 
@@ -38,10 +38,9 @@ export class TimerAppPage implements OnInit {
                message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
 
            });
-           
-           this.dataService.setData(this.sum);
+           this.dataService.setData(this.timerValues);
 
-           this.dataService.incrementData();
+           this.dataService.incrementPData();
 
            this.nextPage();
            

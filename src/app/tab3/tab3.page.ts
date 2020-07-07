@@ -11,12 +11,16 @@ export class Tab3Page implements OnInit{
   constructor(private dataService: DataService) {
 
   }
-
-  fitness = {totalCaloriesLost: 0, addPushups: 0, beginPushups: 0, beginPushupsBank: 0, totalPushups: 0}
   
+  fitness3 = {totalCaloriesLost3: 0, addPushups3: 0, beginPushups3: 0, beginPushupsBank3: 0, totalPushups3: 0};
+  calories = {calorie: 0,}
 
 ngOnInit(){
-  this.dataService.setData(this.fitness);
+  var progress = this.dataService.getData();
+  console.log(progress.totalCaloriesLost3)
+
 }
+  
+
 
 }

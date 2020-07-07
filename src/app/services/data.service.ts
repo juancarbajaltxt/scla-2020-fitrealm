@@ -13,10 +13,11 @@ export class DataService {
     this.data = data;
   }
  
-  incrementData(){
-    this.data.count += 20;
-
-  }
+  incrementPData(){
+    this.data.calLost += 5;
+    this.data.pushupsDone += 25;
+    this.data.ptimesDone += 1;
+    }
 
   getData() {
     return this.data;

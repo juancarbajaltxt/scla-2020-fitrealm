@@ -12,13 +12,17 @@ export class OverviewPage implements OnInit {
 
 data: any;
 
-  constructor(private dataService: DataService, private router: Router) { }
+  constructor(private dataService: DataService) { }
+
+  
+
 
   ngOnInit() {
 
-    var sum = this.dataService.getData();
-    console.log(sum.type, sum.count);
-
+    var tValues = this.dataService.getData();
+    console.log(tValues.calLost, tValues.pushupsDone, tValues.ptimesDone);
+    var tvalViewable = {calsLost: tValues.calLost, pDone: tValues.pushupsDone, ptDone: tValues.ptimesDone};
+    console.log(tvalViewable.calsLost);
   }
 
 }

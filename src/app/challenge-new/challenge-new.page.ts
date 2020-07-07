@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { Procedure } from '../timer-app/timer-app.page';
 
 @Component({
   selector: 'app-challenge-new',
@@ -7,10 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./challenge-new.page.scss'],
 })
 export class ChallengeNewPage implements OnInit {
-
-  //plankRep() {
-    //this.Procedure = 'Planks';
-  //}
 
   constructor() { }
 
