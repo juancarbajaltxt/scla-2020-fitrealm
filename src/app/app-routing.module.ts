@@ -33,8 +33,6 @@ const routes: Routes = [
     path: 'challenge-cardio',
     loadChildren: () => import('./challenge-cardio/challenge-cardio.module').then( m => m.ChallengeCardioPageModule)
   },
-  { path: 'overview/tab1', redirectTo: 'tabs/tab1', pathMatch: 'full' },
- { path: 'tab1', loadChildren: '../tab1/tab1.module#Tab1PageModule' },
 ];
 @NgModule({
   imports: [

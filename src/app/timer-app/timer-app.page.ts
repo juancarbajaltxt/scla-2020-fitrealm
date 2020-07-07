@@ -16,9 +16,11 @@ mobiscroll.settings = {
 })
 export class TimerAppPage implements OnInit {
 
+  
+
   constructor(private route: Router, private dataService: DataService) { }
 
-    timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0,}
+  timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0,}
 
    timer: number;
 

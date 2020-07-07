@@ -9,8 +9,9 @@ const routes: Routes = [
     component: OverviewPage
   },
   {
-    path: 'tab1', redirectTo: 'tabs/tab1', pathMatch: 'full' },
-    { path: 'tab1', loadChildren: '../tab1/tab1.module#Tab1PageModule' },
+    path: 'tab1',
+    component: Tab1Page
+  },
 ];
 
 @NgModule({

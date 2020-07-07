@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Tab1Page } from './tab1.page';
 import { OverviewPage } from '../overview/overview.page';
-//import { ChallengeNewPage } from '../challenge-new/challenge-new.page';
 
 const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
   },
-
-  //{
-    //path: '/challenge',
-    //component: ChallengeNewPage,  
-  //},
+  {
+    path: 'tab3',
+    loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
   
   {
     path: '/overview',

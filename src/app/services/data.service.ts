@@ -14,7 +14,7 @@ export class DataService {
   }
  
   incrementPData(){
-    this.data.calLost += 5;
+    this.data.calLost = this.data.calLost + 5;
     this.data.pushupsDone += 25;
     this.data.ptimesDone += 1;
     }
