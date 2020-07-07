@@ -4,10 +4,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
   <ion-content>
     <span>
       You lost: {{data.cLost}}
     </span>
   </ion-content>
-</ion-card>
+
+  <ion-content>
+    <ion-item button [routerLink]="['/tab1']">
+      <ion-label>
+        Jogging In Place
+      </ion-label>
+    </ion-item>
+  </ion-content>
