@@ -9,6 +9,20 @@ export class DataService {
 
   constructor() { }
 
+  exType = '';
+
+  exSelector = '';
+
+  exDisplay(){
+
+
+  }
+
+  sendConfirm(){
+    this.data.conf += 1;
+  }
+  
+
   setData(data) {
     this.data = data;
   }

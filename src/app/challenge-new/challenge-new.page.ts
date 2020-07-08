@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-challenge-new',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChallengeNewPage implements OnInit {
 
-  constructor() { }
+data: any;
+
+  constructor(private dataService: DataService) { }
+
+  currentEx = {currentExe: 'Planks'}
 
   ngOnInit() {
+    this.dataService.setData(this.currentEx);
+
   }
 
 }

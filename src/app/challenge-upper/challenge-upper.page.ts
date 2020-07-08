@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-challenge-upper',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChallengeUpperPage implements OnInit {
 
+  data: any;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
+
+  currentEx = {currentExe: 'Pushups'}
 
   ngOnInit() {
+    this.dataService.setData(this.currentEx);
+
   }
 
 }

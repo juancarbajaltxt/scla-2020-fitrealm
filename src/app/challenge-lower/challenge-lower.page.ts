@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { Procedure } from '../timer-app/timer-app.page';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-challenge-lower',
@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChallengeLowerPage implements OnInit {
 
-  //squatRep() {
-    //this.Procedure = 'Squats';
-  //}
+data: any;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
+
+  currentEx = {currentExe: 'Squats'}
 
   ngOnInit() {
+    this.dataService.setData(this.currentEx);
+
   }
 
 }

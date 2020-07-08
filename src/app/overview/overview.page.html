@@ -7,15 +7,15 @@
   <ion-content>
     <ion-card>
     <span>
-      You lost: {{data.cLost}} Calories from doing 
+      You lost: {{data.cLost}} Calories from doing {{data.thisEx}}
     </span>
   </ion-card>
   </ion-content>
 
   <ion-content>
-    <ion-item button [routerLink]="['tab1']">
-      <ion-label>
-        Jogging In Place
-      </ion-label>
-    </ion-item>
+    <ion-button href = "tabs/tab1">Return To Workouts</ion-button>
+  </ion-content>
+
+  <ion-content>
+    <ion-button href = "tabs/tab3">See Your Progress</ion-button>
   </ion-content>

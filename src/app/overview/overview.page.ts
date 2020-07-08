@@ -12,9 +12,7 @@ export class OverviewPage implements OnInit {
 
 data: any;
 
-  constructor(private dataService: DataService) { 
-
-    
+  constructor(private dataService: DataService) {     
 
   }
 
@@ -23,7 +21,7 @@ data: any;
     var tValues = this.dataService.getData();
     console.log(tValues.calLost, tValues.pushupsDone, tValues.ptimesDone);
 
-    this.data = {cLost: tValues.calLost}
+    this.data = {cLost: tValues.calLost, thisEx: tValues.currentExe}
     console.log(this.data.cLost);
 
   }
