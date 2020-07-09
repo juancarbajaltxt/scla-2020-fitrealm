@@ -37,7 +37,7 @@ export class TimerAppPage implements OnInit {
        onFinish: () => {
            mobiscroll.alert({
                title: 'Countdown finished',
-               message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
+               message: 'Yup, that\'s right, time\'s up. <br> Return to workouts to continue exercising.'
 
            });
            this.dataService.setData(this.timerValues);
