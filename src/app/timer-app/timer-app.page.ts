@@ -20,7 +20,7 @@ export class TimerAppPage implements OnInit {
 
   constructor(private route: Router, private dataService: DataService) { }
 
-  
+  timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0, planksDone: 0, pltimesDone: 0, squatsDone: 0, stimesDone: 0,}
 
    timer: number;
 
@@ -40,6 +40,7 @@ export class TimerAppPage implements OnInit {
                message: 'Yup, that\'s right, time\'s up. <br> Restart it by setting a new time.'
 
            });
+           this.dataService.setData(this.timerValues);
 
            this.dataService.incrementPData();
 
@@ -50,9 +51,14 @@ export class TimerAppPage implements OnInit {
 
   ngOnInit() {
 
+
+    this.dataService.getData();    
+//idea make them switch from a holder
     var exChosen = this.dataService.getData();
     console.log(exChosen.currentExe);
     this.data = {exChose: exChosen.currentExe}
+    
+
 
   }
   }

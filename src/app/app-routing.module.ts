@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'challenge-cardio',
     loadChildren: () => import('./challenge-cardio/challenge-cardio.module').then( m => m.ChallengeCardioPageModule)
   },
+  {
+    path: 'challenge-stretch',
+    loadChildren: () => import('./challenge-stretch/challenge-stretch.module').then( m => m.ChallengeStretchPageModule)
+  },
 ];
 @NgModule({
   imports: [

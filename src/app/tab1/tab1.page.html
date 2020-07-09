@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header id = "tab1Header" [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Select A Workout
@@ -13,27 +13,23 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item button [routerLink]="['/challenge-new']">
-    <ion-label>
-      Core
-    </ion-label>
+  <ion-item button [routerLink]="['/challenge-new']" class = "core">
+  Core Exercises
   </ion-item>
 
-  <ion-item button [routerLink]="['/challenge-lower']">
-    <ion-label>
+  <ion-item button [routerLink]="['/challenge-lower']" class = "lower">
       Lower Body
-    </ion-label>
   </ion-item>
 
-  <ion-item button [routerLink]="['/challenge-upper']">
-    <ion-label>
+  <ion-item button [routerLink]="['/challenge-upper']" class = "upper">
       Upper Body
-    </ion-label>
   </ion-item>
 
-  <ion-item button [routerLink]="['/challenge-cardio']">
-    <ion-label>
-      Cardio
-    </ion-label>
+  <ion-item button [routerLink]="['/challenge-cardio']" class = "cardio">
+      Cardio Activity
   </ion-item>
-  
+
+  <ion-item button [routerLink]="['/challenge-stretch']" class = "stretch">
+    Stretching Session
+</ion-item>
+</ion-content>
