@@ -14,4 +14,19 @@ ion-item{
     float: left;
     width: 33.33%;
     padding: 5px;
+    text-align: bottom;
+    
+}
+div.upper{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img{
+    width: 500px;
+    object-fit: fill;
+}
+#upper{
+    display: block;
 }

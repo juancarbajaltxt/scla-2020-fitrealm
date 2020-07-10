@@ -1,5 +1,5 @@
-import { FormsModule } from '@angular/forms';
 import { MbscModule } from '@mobiscroll/angular';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
@@ -33,8 +33,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [ 
+    MbscModule,  
     FormsModule,  
-    MbscModule, RouterModule.forChild(routes)],
+RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}

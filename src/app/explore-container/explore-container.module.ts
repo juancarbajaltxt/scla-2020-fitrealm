@@ -9,7 +9,8 @@ import { ExploreContainerComponent } from './explore-container.component';
 
 @NgModule({
   imports: [ 
-    MbscModule,  CommonModule, FormsModule, IonicModule],
+    MbscModule,  
+CommonModule, FormsModule, IonicModule],
   declarations: [ExploreContainerComponent],
   exports: [ExploreContainerComponent]
 })

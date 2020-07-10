@@ -11,7 +11,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module'
 
 @NgModule({
   imports: [ 
-    MbscModule, 
+    MbscModule,  
     IonicModule,
     CommonModule,
     FormsModule,

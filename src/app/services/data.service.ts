@@ -24,6 +24,10 @@ export class DataService {
     this.data.ptimesDone += 1;
     }
 
+    equalize(){
+      this.data.exSelect = this.data.exType;
+    }
+
   getData() {
     return this.data;
   }

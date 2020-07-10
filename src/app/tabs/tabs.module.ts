@@ -10,7 +10,7 @@ import { TabsPage } from './tabs.page';
 
 @NgModule({
   imports: [ 
-    MbscModule, 
+    MbscModule,  
     IonicModule,
     CommonModule,
     FormsModule,

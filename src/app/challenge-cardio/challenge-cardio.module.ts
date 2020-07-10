@@ -1,3 +1,4 @@
+import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -9,7 +10,8 @@ import { ChallengeCardioPageRoutingModule } from './challenge-cardio-routing.mod
 import { ChallengeCardioPage } from './challenge-cardio.page';
 
 @NgModule({
-  imports: [
+  imports: [ 
+    MbscModule,  
     CommonModule,
     FormsModule,
     IonicModule,

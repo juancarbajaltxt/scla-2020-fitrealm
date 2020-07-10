@@ -11,7 +11,6 @@ import { DataService } from '../services/data.service';
 export class Tab1Page implements OnInit{
 
   exSelect = {exType: '',}
-  timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0, planksDone: 0, pltimesDone: 0, squatsDone: 0, stimesDone: 0,}
   
   sendconfirm = {conf: 0,}
 
@@ -22,8 +21,7 @@ export class Tab1Page implements OnInit{
   navigatechallengePopup(): void {}
 
   ngOnInit() {
-    console.log(this.timerValues);
-    this.dataService.setData(this.timerValues);
+    this.dataService.setData(this.exSelect);
   }
 
 }

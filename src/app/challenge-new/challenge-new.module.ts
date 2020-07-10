@@ -1,3 +1,4 @@
+import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -11,7 +12,8 @@ import { ChallengeNewPage } from './challenge-new.page';
 
 
 @NgModule({
-  imports: [
+  imports: [ 
+    MbscModule,  
     CommonModule,
     FormsModule,
     IonicModule,
