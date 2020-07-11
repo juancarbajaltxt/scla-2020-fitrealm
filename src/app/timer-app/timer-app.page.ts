@@ -22,6 +22,8 @@ export class TimerAppPage implements OnInit {
 
   timerValues = {calLost: 0, pushupsDone: 0, ptimesDone: 0, planksDone: 0, pltimesDone: 0, squatsDone: 0, stimesDone: 0,}
 
+  copyExe = {}
+
    timer: number;
 
 
@@ -40,6 +42,8 @@ export class TimerAppPage implements OnInit {
                message: 'Yup, that\'s right, time\'s up. <br> Return to workouts to continue exercising.'
 
            });
+           this.dataService.setData(this.copyExe);
+
            this.dataService.setData(this.timerValues);
 
            this.dataService.incrementPData();
@@ -57,6 +61,7 @@ export class TimerAppPage implements OnInit {
     var exChosen = this.dataService.getData();
     console.log(exChosen.currentExe);
     this.data = {exChose: exChosen.currentExe}
+    this.copyExe = {currentExer: this.data.exChose}
     
 
 

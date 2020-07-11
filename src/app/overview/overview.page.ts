@@ -16,13 +16,16 @@ data: any;
 
   }
 
+  exercise = {exercisetext: ''}
+
   ngOnInit() {
 
     var tValues = this.dataService.getData();
     console.log(tValues.calLost, tValues.pushupsDone, tValues.ptimesDone);
 
-    this.data = {cLost: tValues.calLost, thisEx: tValues.currentExe}
-    console.log(this.data.cLost);
+    this.data = {cLost: tValues.calLost, thisEx: tValues.currentEx}
+    console.log(this.data.cLost, this.data.thisEx);
+    this.exercise.exercisetext = this.data.thisEx;
 
   }
 
